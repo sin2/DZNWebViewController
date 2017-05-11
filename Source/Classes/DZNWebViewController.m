@@ -533,7 +533,7 @@ static char DZNWebViewControllerKVOContext = 0;
 - (void)configureToolBars
 {
     if (DZN_IS_IPAD) {
-        self.navigationItem.leftBarButtonItems = [[[self navigationToolItems] reverseObjectEnumerator] allObjects];
+        self.navigationItem.leftBarButtonItems = [self navigationToolItems];
     }
     else {
         [self setToolbarItems:[self navigationToolItems]];
